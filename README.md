@@ -1,5 +1,8 @@
 # txAdmin Discord Logs
 
+
+![preview](https://ibb.co/Y4LM8gHk)
+
 A logging system for FiveM servers that sends txAdmin actions to Discord via webhooks.
 
 
