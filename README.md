@@ -19,7 +19,7 @@ A logging system for FiveM servers that sends txAdmin actions to Discord via web
 ## Requirements
 
 - FiveM Server
-- txAdmin
+- [txAdmin](https://github.com/tabarra/txAdmin).
 - Discord server with a webhook URL
 
 ## Installation
