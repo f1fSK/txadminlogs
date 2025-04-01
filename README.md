@@ -27,7 +27,7 @@ A comprehensive logging system for FiveM servers that sends txAdmin actions to D
 
 1. Download the resource
 2. Place it in your server's resources folder
-3. Add `ensure actiongaming_logs` to your server.cfg
+3. Add `ensure tx_discordlogs` to your server.cfg
 4. Configure the webhook URL in config.lua
 5. Restart your server
 
