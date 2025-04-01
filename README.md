@@ -1,8 +1,7 @@
 # txAdmin Discord Logs
 
-A comprehensive logging system for FiveM servers that sends txAdmin actions to Discord via webhooks.
+A logging system for FiveM servers that sends txAdmin actions to Discord via webhooks.
 
-![txAdmin Discord Logs](https://repository-images.githubusercontent.com/183337178/699b2500-cad9-11e9-9e0a-96af2a134587)
 
 ## Features
 
