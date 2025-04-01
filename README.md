@@ -1,7 +1,7 @@
 # txAdmin Discord Logs
 
 
-![preview]([https://ibb.co/Y4LM8gHk](https://i.ibb.co/qLrf96Ts/tx.png))
+![preview](https://i.ibb.co/qLrf96Ts/tx.png)
 
 A logging system for FiveM servers that sends txAdmin actions to Discord via webhooks.
 
