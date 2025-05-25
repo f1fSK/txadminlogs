@@ -1,5 +1,16 @@
 local recentLogs = {}
 
+local function urlencode(str)
+    if (str) then
+        str = string.gsub(str, "\n", "\r\n")
+        str = string.gsub(str, "([^%w ])",
+            function(c) return string.format("%%%02X", string.byte(c)) end)
+        str = string.gsub(str, " ", "%%20")
+    end
+    return str
+end
+
+
 function sendToDiscord(title, description, playerInfo)
     local logIdentifier = playerInfo.source .. "_" .. title .. "_" .. math.floor(GetGameTimer() / 1000)
 
@@ -24,7 +35,7 @@ function sendToDiscord(title, description, playerInfo)
             ["color"] = Config.EmbedColor,
             ["author"] = {
                 ["name"] = playerInfo.name .. " (ID: " .. playerInfo.source .. ")",
-                ["icon_url"] = "https://ui-avatars.com/api/?background=random&name=" .. playerInfo.name
+                ["icon_url"] = "https://ui-avatars.com/api/?background=random&name=" .. urlencode(playerInfo.name)
             },
             ["thumbnail"] = {
                 ["url"] = "https://repository-images.githubusercontent.com/183337178/699b2500-cad9-11e9-9e0a-96af2a134587",
